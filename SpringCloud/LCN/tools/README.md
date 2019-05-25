@@ -1,0 +1,4 @@
+- TM事务管理器配置文件：application.properties
+- Windows版redis：reids.3.2.100-windows.rar
+- 事务管理器数据库脚本：tx-manager.sql 
+- LCN源代码（修改过配置及编译方式）：tx-lcn.rar
