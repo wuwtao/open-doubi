@@ -25,6 +25,7 @@
         <mybatis-plus-version>3.1.1</mybatis-plus-version>
         <mysql-driver-version>5.1.47</mysql-driver-version>
         <druid-version>1.1.10</druid-version>
+        <sharding-sphere.version>3.0.0</sharding-sphere.version>
     </properties>
 
 
@@ -51,4 +52,8 @@
         </plugins>
     </build>
 
+    <modules>
+        <module>mybatis-plus</module>
+        <module>logback</module>
+    </modules>
 </project>

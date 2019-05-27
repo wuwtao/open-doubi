@@ -10,7 +10,6 @@
         FROM
           USER
         WHERE ID = #{USER_ID}
-
     </select>
 
 </mapper>
