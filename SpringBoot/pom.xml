@@ -55,5 +55,6 @@
     <modules>
         <module>mybatis-plus</module>
         <module>logback</module>
+        <module>aop</module>
     </modules>
 </project>
