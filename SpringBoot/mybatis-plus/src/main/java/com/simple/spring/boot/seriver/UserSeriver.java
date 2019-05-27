@@ -1,5 +1,6 @@
 package com.simple.spring.boot.seriver;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
@@ -29,6 +30,8 @@ public class UserSeriver {
         return userMapper.selectList(null);
     }
 
+
+    @DS("master")
     public List<User> getListQuery(){
         User user = new User();
         user.setName("SimpleWu");
@@ -36,6 +39,7 @@ public class UserSeriver {
         return userMapper.selectList(wrapper);
     }
 
+    @DS("slave_1")
     public IPage<User> page(){
         int currentPage = 1 ; //当前页
         int pageSize = 2 ;//每页大小

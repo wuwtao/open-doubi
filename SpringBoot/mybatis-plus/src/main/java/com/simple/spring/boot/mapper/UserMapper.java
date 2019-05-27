@@ -12,7 +12,6 @@ import java.util.Map;
  * @author: SimpleWu
  * @date: 2019/5/25
  */
-@DS("slave_1")
 public interface UserMapper extends BaseMapper<User> {
 
     Map<String,Object> queryUser(@Param("USER_ID") String userId);
