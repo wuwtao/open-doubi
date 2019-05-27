@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 该配置命名空间 -->
+<mapper namespace="com.simple.spring.boot.mapper.UserMapper">
+
+    <select id="queryUser" resultType="java.util.HashMap" parameterType="java.lang.String">
+        SELECT
+          ID,
+          NAME
+        FROM
+          USER
+        WHERE ID = #{USER_ID}
+
+    </select>
+
+</mapper>
