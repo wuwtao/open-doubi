@@ -1,0 +1,35 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: vts_sc_sharding_mybatis
+
+#sharding-jdbcµƒ≈‰÷√
+sharding.jdbc:
+  data-sources:
+    ds_master:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/db1?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+      username: root
+      password: root
+    ds_slave_0:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3307/db2?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+      username: root
+      password: root
+  master-slave-rule:
+    name: ds_ms
+    master-data-source-name: ds_master
+    slave-data-source-names: ds_slave_0
+    load-balance-algorithm-type: round_robin
+  config:
+    props:
+      sql.show: true
+#mybatisµƒ≈‰÷√
+mybatis:
+  #  config-location: classpath:mybatis/config.xml
+  mapper-locations: classpath:mappers/*.xml
+logging:
+  level:
+    com.simple: debug
