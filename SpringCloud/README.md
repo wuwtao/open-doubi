@@ -28,7 +28,7 @@ Spring Cloud是一套完整的微服务解决方案，它将现在非常流行�
 5. 组件支持丰富，功能齐全
 
 #### Spring Cloud Netflix目录案例
-1.  [孰能巧用 Spring Cloud 服务注册中心Eureka](https://www.cnblogs.com/SimpleWu/p/10922654.html)   [案例代码参考](https://github.com/450255266/open-doubi/tree/master/SpringCloud)
+1.  [孰能巧用 Spring Cloud 服务注册中心Eureka](https://www.cnblogs.com/SimpleWu/p/11177200.html |  [案例代码参考](https://github.com/450255266/open-doubi/tree/master/SpringCloud)
 #### SpringCloud alibaba 目录案例
 
 `该页为目录页，持续更新....`
