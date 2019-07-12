@@ -9,14 +9,13 @@ import org.springframework.stereotype.Component;
 
 
 /**
- * Eureka时间监听
+ * Eureka事件监听
+ * @author SimpleWu
  */
 @Component
-public class EurekaStateChangeListener {
+public class EurekaListener {
 
-
-    private final  Logger log = LoggerFactory.getLogger(EurekaStateChangeListener.class);
-
+    private final  Logger log = LoggerFactory.getLogger(EurekaListener.class);
 
     @EventListener
     public void listen(EurekaInstanceCanceledEvent event) {
