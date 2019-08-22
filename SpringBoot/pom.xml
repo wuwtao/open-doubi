@@ -56,5 +56,8 @@
         <module>mybatis-plus</module>
         <module>logback</module>
         <module>aop</module>
+        <module>sharding-jdbc</module>
+        <module>common-quartz</module>
+        <module>redis-util</module>
     </modules>
 </project>
