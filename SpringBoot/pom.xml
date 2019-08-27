@@ -59,5 +59,6 @@
         <module>sharding-jdbc</module>
         <module>common-quartz</module>
         <module>redis-util</module>
+        <module>email</module>
     </modules>
 </project>
