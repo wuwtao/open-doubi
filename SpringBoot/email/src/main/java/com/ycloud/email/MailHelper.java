@@ -78,6 +78,7 @@ public class MailHelper {
             mimeMessageHelper.setFrom(emailSender);//发件人
             javaMailSender.send(mimeMailMessage);
         } catch (Exception e) {
+            e.printStackTrace();
             log.error("邮件发送失败", e.getMessage());
         }
     }

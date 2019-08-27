@@ -15,23 +15,11 @@ import java.util.List;
  */
 @Data
 public class MailEntity {
-
-    //收件人
-    private String to;
-
-    //标题
-    private String subject;
-
-    //正文
-    private String text;
-
-    //是否html邮件
-    private boolean isHtml = false;
-
-    //附件地址
-    private List<String> files;
-
-    //发送时间
-    private Date sentDate;
+    private String to; //收件人
+    private String subject;//标题
+    private String text;//正文
+    private boolean isHtml = false;//是否html邮件
+    private List<String> files;//附件地址
+    private Date sentDate;//发送时间
 
 }
