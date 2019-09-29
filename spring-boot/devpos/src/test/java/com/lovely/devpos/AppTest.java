@@ -33,8 +33,8 @@ public class AppTest {
 	public static void main(String args[]) throws SVNException {
 		SVNPojo svnPojo = new SVNPojo();
 		svnPojo.setOptinoalSvnUrl("https://zitao/svn/test");
-		svnPojo.setUserName("xtadmin");
-		svnPojo.setPassword("abc123!!");
+		svnPojo.setUserName("qwe123");
+		svnPojo.setPassword("qwe123!!");
 		svnPojo.setServiceFileUrl("E:/dvepos");
 
 
@@ -48,8 +48,8 @@ public class AppTest {
 	public void check() throws SVNException {
 		SVNPojo svnPojo = new SVNPojo();
 		svnPojo.setOptinoalSvnUrl("https://zitao/svn/test");
-		svnPojo.setUserName("xtadmin");
-		svnPojo.setPassword("abc123!!");
+		svnPojo.setUserName("qwe123");
+		svnPojo.setPassword("qwe123!!");
 		svnPojo.setServiceFileUrl("E:/dvepos");
 
 
