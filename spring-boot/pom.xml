@@ -60,5 +60,7 @@
         <module>common-quartz</module>
         <module>redis-util</module>
         <module>email</module>
+        <module>devpos</module>
+        <module>custom-mybatis-pager</module>
     </modules>
 </project>
